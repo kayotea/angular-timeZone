@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  button_timezone = ['PST 0', 'MST 1', 'CST 2', 'EST 3', 'Clear 4'];
   button_colors = ['white', 'white', 'white', 'white', 'white'];
   datetime = this.formatDate(new Date(), 0);
   showdate = this.datetime;
