@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+  <head></head>
+  <body>
+    <div style="text-align:center">
+      <h1>
+        US Time Zone Display
+      </h1>      
+      <button (click)='switchBoard(0)' class='{{button_colors[0]}}' name='button0'>PST</button>
+      <button (click)='switchBoard(1)' class='{{button_colors[1]}}'>MST</button>
+      <button (click)='switchBoard(2)' class='{{button_colors[2]}}'>CST</button>
+      <button (click)='switchBoard(3)' class='{{button_colors[3]}}'>EST</button>
+      <button (click)='switchBoard(4)' class='{{button_colors[4]}}'>Clear</button>
+      <h2 *ngIf='!cleardate'>{{showdate}}</h2>
+    </div>
+  </body>
+</html>
